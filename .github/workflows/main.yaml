@@ -23,4 +23,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/surdaft/snips.sh-notification-bot:latest
+          tags: surdaft/snips.sh-notification-bot:latest
+          secrets: |
+            "github_token=${{ secrets.GITHUB_TOKEN }}"   
